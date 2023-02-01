@@ -3,7 +3,7 @@
 ## Sobre o projeto
 ### Descrição:
 ##### Um projeto feito por hobby para treinar as skills em JavaScript, CSS, HTML e Python.
-##### O projeto busca mostrar informações diárias, semanais ou mensais sobre câmbios de moedas dentro de um gráfico, a partir de uma RestAPI.
+##### O projeto busca mostrar informações diárias e semanais ou mensais sobre câmbios de moedas dentro de um gráfico, a partir de uma RestAPI.
 
 ### Tecnologias utilizadas:
 ##### JavaScript (vanilla e ApexChart para o gráfico)
