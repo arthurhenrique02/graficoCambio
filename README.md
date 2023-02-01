@@ -1,4 +1,4 @@
-# graficoCambio
+# Gráfico de Cambio
 
 ## Sobre o projeto
 ### Descrição:
