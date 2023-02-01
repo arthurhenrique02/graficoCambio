@@ -1,0 +1,210 @@
+:root {
+    --white: #f4f4f4;
+    --black: #000000;
+    --purple: #6200ff99;
+}
+
+/* align main items */
+main {
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+/* container for cards */
+.cardContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: auto;
+}
+
+/* card rows */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    margin: auto;
+}
+
+/* today values card */
+.todaysValues {
+    align-items: center;
+    align-content: center;
+    align-self: normal;
+    flex-direction: column;
+    margin: 20px 20px 0px 20px;
+    display: flex;
+}
+.exchange {
+    font-size: 60px;
+    font-weight: 400;
+    margin: 20px 20px 20px 20px;
+}
+
+.card h1 { 
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 10px 20px 0px 20px;
+}
+.card h5 {
+    margin: 0px 20px 0px 20px;
+}
+.card h6 {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0px 20px 20px 20px;
+}
+
+/* cards */
+.card {
+    align-items: center;
+    align-content: center;
+    align-self: normal;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 10px 10px 10px 10px;
+}
+
+/* glass effect for cards */
+.glassEffect {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+}
+
+/* Size and changes for buttons */
+.btn {
+    color: var(--black);
+    justify-self: normal;
+    align-content: right;
+    flex-direction: row;
+    display: flex;
+    background-color: var(--purple);
+    border: none;
+    border-radius: 20px;
+    border-color: black;
+    margin: 5px;
+}
+
+/* Space for buttons */
+.btnspace {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+/* changes to select option */
+.currs {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    background-color: var(--purple);
+    border: none;
+    border-radius: 20px;
+    border-color: black;
+    color: var(--black);
+    font-size: 15px;
+    flex-direction: row;
+    height: 17px;
+    justify-self: center;
+    margin: 5px;
+    padding-left: 3px;
+    width: auto;
+}
+
+.allOptions {
+    align-content: right;
+    background-color: var(--purple) 80%;
+    border: none;
+    border-radius: 20px;
+    border-color: black;
+    color: var(--black);
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    justify-self: center;
+}
+
+/* changes to options scrollbar */
+.allOptions::-webkit-scrollbar {
+    width: 5px;
+}
+
+.allOptions::-webkit-scrollbar-track {
+    background: #6200ff13;
+}
+
+/* Handle */
+.allOptions::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+
+/* changes to chart */
+.graph {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    height: 100%;
+    width: 1024px;
+    margin-bottom: 20px;
+}
+
+/* change tooltip color */
+.apexcharts-tooltip {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+}
+
+/*make responsive areas*/
+@media screen and (min-width: 400px) and (max-width: 1500px) {
+    
+    .card h1 {
+        font-size: 200%;
+    }   
+    .cardContainer {
+        width: 93.2%;
+        height: 45%;
+        flex-direction: column; 
+    }
+
+    .row {
+        width: 93.2%;
+        height: 45%;
+    }
+
+    .card {
+        width: 93.2%;
+        height: 45%;
+        overflow: hidden;
+    }
+
+    .graph {
+        width: 93.2%;
+        height: 45%;
+    }
+
+    .currs {
+        width: auto;
+        height: auto;
+    }
+}
