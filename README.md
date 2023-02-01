@@ -24,3 +24,7 @@
 ##### Quando a API é iniciada, ela checa se no banco de dados há uma table chamada "latests" e verifica se nessa table há de 30 dias ou mais de todas as moedas que a FrankFurter API fornece. Caso não haja essas informações, a API coleta os dados de 30 dias e salva dentro do banco de dados
 ##### O método HTTP GET e POST retornam a mesma coisa da API, apenas suas informações.
 ##### Após a criação da API e da rota para os dados da mesma, foi criado um rota padrão ("/") para mostrar o gráfico
+
+
+#### Dicas de como utilizar:
+##### Há um arquivo txt chamado "requirements.txt", nele estão todas as bibliotecas necessárias para o funcionamento do programa, após instalar essas bibliotecas vá ao terminal de comando e digite "flask run" enquanto estiver com o arquivo "api.py" aberto, ele executará esse aquivo e criará uma rota local para acessar
